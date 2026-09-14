@@ -1,0 +1,2 @@
+import {Container} from '@/components/ui/Container'; import {SectionHeading} from '@/components/ui/SectionHeading'; import {FAQAccordion} from '@/components/ui/FAQAccordion'; import {faqs} from '@/data/faqs';
+export function FAQ(){return <section className="py-20 lg:py-28"><Container className="grid gap-10 lg:grid-cols-[.75fr_1.25fr]"><SectionHeading eyebrow="FAQ" title="Questions, answered clearly." description="Keep patient information simple, accurate and easy to scan."/><FAQAccordion items={faqs}/></Container></section>}

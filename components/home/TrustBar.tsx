@@ -1,0 +1,3 @@
+import {HeartHandshake,Stethoscope,ClipboardCheck,UserRoundCheck} from 'lucide-react'; import {Container} from '@/components/ui/Container';
+const items=[['Experienced Doctor',Stethoscope],['Patient-Centered Care',HeartHandshake],['Modern Treatment Approach',ClipboardCheck],['Personalized Consultation',UserRoundCheck]] as const;
+export function TrustBar(){return <section className="border-y border-slate-200 bg-white"><Container className="grid grid-cols-2 divide-x divide-slate-200 md:grid-cols-4">{items.map(([label,Icon])=><div key={label} className="flex items-center gap-3 px-4 py-6 text-sm font-semibold text-ink first:pl-0"><Icon className="h-5 w-5 text-teal"/><span>{label}</span></div>)}</Container></section>}
